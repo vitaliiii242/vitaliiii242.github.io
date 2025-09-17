@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Business Management Forum OU — Õigus- ja Professionaalsed Teenused</title>
+  <meta name="description" content="Business Management Forum OU — juriidilised teenused, professionaalsed, teaduslikud ja tehnilised teenused. Paevalille tn 6-15, Tallinn." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0c1a21;
+      --bg-soft:#0f242e;
+      --text:#e5ecf1;
+      --muted:#9bb1bd;
+      --accent:#e0c188;
+      --card:#10252d;
+      --max:1200px;
+    }
+    *, *::before, *::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;}
+    a{color:inherit;text-decoration:none}
+    .header{position:fixed;inset:0 0 auto 0;height:64px;display:flex;align-items:center;justify-content:center;z-index:50;background:linear-gradient(to bottom, rgba(12,26,33,.75), rgba(12,26,33,0));backdrop-filter:saturate(1.2) blur(4px)}
+    .nav{width:100%;max-width:var(--max);display:flex;align-items:center;justify-content:space-between;padding:0 20px}
+    .brand{font-weight:800;letter-spacing:.12em}
+    .nav ul{display:flex;gap:28px;list-style:none;margin:0;padding:0}
+    .cta{padding:.6rem 1rem;border:1px solid rgba(229,236,241,.15);border-radius:999px}
+    .container{width:100%;max-width:var(--max);margin:0 auto;padding:0 20px}
+    .section{padding:96px 0;border-top:1px solid rgba(255,255,255,.04)}
+    .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+    .grid.reverse{grid-template-columns:.9fr 1.1fr}
+    .eyebrow{font-size:.78rem;letter-spacing:.25em;color:var(--accent);text-transform:uppercase}
+    h1,h2{font-family:"Playfair Display", Georgia, serif;line-height:1.1;margin:.4em 0}
+    h1{font-size:clamp(2rem,5vw,3.75rem);}
+    h2{font-size:clamp(1.5rem,3.8vw,2.25rem)}
+    p{color:var(--muted);line-height:1.7}
+    .hero{min-height:100vh;display:grid;place-items:center;position:relative;}
+    .hero::before{content:"";position:absolute;inset:0;background:url('main1.jpg') center/cover no-repeat;filter:contrast(1.1) saturate(1.05);}
+    .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom, rgba(12,26,33,.55), rgba(12,26,33,.9));}
+    .hero-inner{position:relative;z-index:1;}
+    .hero h1{max-width:20ch}
+    .scroll{display:inline-flex;align-items:center;gap:8px;margin-top:12px;color:var(--muted);font-size:.9rem}
+    .media{border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,.06);background:var(--card);box-shadow:0 10px 40px rgba(0,0,0,.25)}
+    .media img{display:block;width:100%;height:auto}
+    footer{padding:64px 0;color:var(--muted)}
+    .footgrid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    form{display:grid;gap:16px;margin-top:32px}
+    input,textarea{padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,.15);background:var(--card);color:var(--text);font-family:inherit}
+    button{padding:12px;border:none;border-radius:8px;background:var(--accent);color:#000;font-weight:600;cursor:pointer}
+    .notice{margin-top:16px;color:var(--accent);display:none}
+    @media (max-width:960px){.grid,.grid.reverse{grid-template-columns:1fr;}.section{padding:72px 0}}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <div class="brand">Business Management Forum OU</div>
+      <ul>
+        <li><a href="#top">Peamine</a></li>
+        <li><a href="#about">Meist</a></li>
+        <li><a href="#services">Teenused</a></li>
+        <li><a href="#advantages">Eelised</a></li>
+        <li><a href="#why">Miks valida meid</a></li>
+        <li><a href="#contactform">Kontaktivorm</a></li>
+        <li><a href="#contacts">Kontaktid</a></li>
+      </ul>
+      <a class="cta" href="#contacts">Kontakt</a>
+    </nav>
+  </header>
+
+  <main id="top" class="hero">
+    <div class="hero-inner container">
+      <div class="eyebrow">Õigus- ja Professionaalsed Teenused</div>
+      <h1>Ole valmis õigusalasteks ja tehnilisteks väljakutseteks!</h1>
+      <a class="scroll" href="#about">keri alla ↓</a>
+    </div>
+  </main>
+
+  <section id="about" class="section">
+    <div class="container grid">
+      <div>
+        <div class="eyebrow">Meist</div>
+        <h2>Kes me oleme</h2>
+        <p>Business Management Forum OU pakub juriidilisi, professionaalseid, teaduslikke ja tehnilisi teenuseid. Oleme usaldusväärne partner ettevõtetele, kes otsivad tuge õiguslikes ja strateegilistes küsimustes.</p>
+      </div>
+      <figure class="media"><img src="main2.jpg" alt="Meeskond"></figure>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container grid reverse">
+      <figure class="media"><img src="main3.jpg" alt="Teenused"></figure>
+      <div>
+        <div class="eyebrow">Teenused</div>
+        <h2>Meie lahendused</h2>
+        <p>Pakkume laia valikut õigusabi ja konsultatsiooniteenuseid: lepingud, vastavus, riskianalüüs ja teaduslikud ekspertiisid. Meie eesmärk on pakkuda paindlikke lahendusi, mis sobivad igale ettevõttele.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="advantages" class="section">
+    <div class="container grid">
+      <div>
+        <div class="eyebrow">Eelised</div>
+        <h2>Miks meiega koostööd teha?</h2>
+        <p>Meie eksperdid ühendavad teadmised ja kogemused, et pakkuda personaalset ja tulemustele suunatud lähenemist. Läbipaistvus, kiirus ja usaldusväärsus on meie prioriteedid.</p>
+      </div>
+      <figure class="media"><img src="main4.jpg" alt="Eelised"></figure>
+    </div>
+  </section>
+
+  <section id="why" class="section">
+    <div class="container grid reverse">
+      <figure class="media"><img src="main2.jpg" alt="Miks valida meid"></figure>
+      <div>
+        <div class="eyebrow">Miks valida meid</div>
+        <h2>Erinevus, mis loeb</h2>
+        <p>Erineme teistest sellega, et seome õigusliku vaate praktilise äriloogikaga. See aitab teil saavutada eesmärke efektiivselt ja kindlalt.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contactform" class="section">
+    <div class="container">
+      <h2>Võtke meiega ühendust</h2>
+      <form id="contactForm">
+        <input type="text" name="teema" placeholder="Teema" required>
+        <input type="email" name="email" placeholder="Teie e-post" required>
+        <textarea name="kirjeldus" placeholder="Kirjeldus" rows="5" required></textarea>
+        <button type="submit">Saada</button>
+      </form>
+      <div class="notice" id="formNotice">Sõnum on edukalt saadetud! Me võtame teiega peagi ühendust.</div>
+    </div>
+  </section>
+
+  <section id="contacts" class="section">
+    <div class="container footgrid">
+      <div>
+        <h3>Business Management Forum OU</h3>
+        <p>Aadress: Paevalille tn 6-15, 13517 Tallinn</p>
+        <p>E-post: vitalii@businessmanagementforum.org</p>
+        <p style="margin-top:1rem">© 2025 Business Management Forum OU. Kõik õigused kaitstud.</p>
+      </div>
+      <div>
+        <h4>Lingid</h4>
+        <p><a href="#about">Meist</a> • <a href="#services">Teenused</a> • <a href="#advantages">Eelised</a> • <a href="#why">Miks valida meid</a></p>
+        <p><a href="#top">Tagasi üles</a></p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const notice = document.getElementById('formNotice');
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      form.reset();
+      notice.style.display = 'block';
+    });
+  </script>
+</body>
+</html>
